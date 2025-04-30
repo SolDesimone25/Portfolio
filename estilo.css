@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+*{
+    box-sizing: border-box;
+    font-family: 'Courier Prime';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*----MENU----*/
+.contenedor-header{
+    background: rgb(64, 150, 87);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Clicker Script';
+    font-size: 50px;
+    color: rgb(204, 243, 218);
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none; /*Le saca los puntos*/
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: rgb(160, 214, 172);
+    margin: 0 25px;
+    padding: 15px;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 20px;
+}
+.contenedor-header header nav ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+/*Seccion INICIO*/
+.inicio{
+    background: linear-gradient(to top, rgba(151, 158, 153, 0.8), rgb(151, 158, 153, .1)), url(fondoJPG.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+
+}
+.inicio .contenedor-banner{
+    padding: 20px;
+    background-color: rgb(204, 243, 218);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenedor-banner img{
+    margin-top: 10px;
+    border: 10px, solid, rgb(64, 150, 87);
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenedor-banner h1{
+    margin-top: 25px;
+    font-size: 50px;
+    font-family: 'Clicker Script';
+}
+.inicio .contenedor-banner h2{
+    font-size: 25px;
+    font-weight: normal;
+}
+.inicio .contenedor-banner .redes a{
+    color: rgb(35, 131, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid rgb(64, 150, 87); /* corregí las comas */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    font-size: 30px;
+    transition: .3s;
+}
+.inicio .contenedor-banner .redes a:hover{
+    background-color: rgb(64, 150, 87); /* fondo más fuerte */
+    color: white; /* cambia el color del icono a blanco */
+    border-color: rgb(64, 150, 87); /* también cambio el borde al mismo verde */
+}
+.inicio .contenedor-banner .redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+/* Seccion Sobre Mi*/
+.sobremi{
+    background-color: rgb(255, 255, 255);
+    color: rgb(48, 115, 72);
+    padding: 50px 20px;
+}
+.sobremi .contenedor-seccion{
+    background-color: rgb(204, 243, 218);
+    border-radius: 30px;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 60px;
+    font-family: 'Clicker Script';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenedor-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenedor-seccion p span{
+    color: black;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+
+.sobremi .fila .col h3{
+    font-size: 35px;
+    font-family: 'Clicker Script';
+    margin-bottom: 25px;
+    text-align: center; /* <<< Agregá esta línea */
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: black;
+    width: 130px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-left: auto; /* <<< Agregá esta línea */
+    margin-right: 0;   /* <<< Asegura que esté bien pegado a la derecha */
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: rgb(241, 66, 142); /* fondo más fuerte */
+    color: white; /* cambia el color del icono a blanco */
+    border-color: rgb(64, 150, 87); /* también cambio el borde al mismo verde */
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi .fila .col .contenedor-intereses .interes span {
+    font-size: 14px;
+    text-align: center;
+    word-break: break-word;
+    padding: 0 5px;
+}
+.sobremi .btn-descarga {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+    width: fit-content;
+    display: block;
+    margin: 35px auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 16px;
+    color: #000000;
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.sobremi .btn-descarga .overlay {
+    position: absolute;
+    background-color: rgb(39, 93, 61);
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi .btn-descarga:hover .overlay {
+    width: 100%;
+}
+/*Seccion SKILLS*/
+.skills{
+    background: linear-gradient(to top, rgba(151, 158, 153, 0.8), rgb(151, 158, 153, .4)), url(Fondo2.png);
+    color: rgb(48, 115, 72);
+    padding: 50px 20px;
+}
+.skills .contenedor-seccion{
+    background-color: rgb(204, 243, 218);
+    border-radius: 30px;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 60px;
+    font-family: 'Clicker Script';
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 35px;
+    font-family: 'Clicker Script';
+    margin-bottom: 25px;
+    text-align: center; /* <<< Agregá esta línea */
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #cccccc;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: rgb(96, 182, 126);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: pink;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+
+}
+
+/*Seccion PROYECTOS*/
+.proyectos {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5% 10%;
+}
+
+.proyectos .contenedor-seccion {
+    background-color: rgb(204, 243, 218);
+    border-radius: 30px;
+    padding: 50px;
+    max-width: 1150px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos h2 {
+    font-size: 45px;
+    font-family: 'Clicker Script';
+    text-align: center;
+    padding: 10px 0 30px 0;
+    color: rgb(48, 115, 72);
+}
+
+.proyectos .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.proyectos .galeria .proyect {
+    position: relative;
+    width: 320px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.proyectos .galeria .proyect:hover {
+    transform: scale(1.05);
+}
+
+.proyectos .galeria .proyect img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.proyectos .galeria .proyect .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ease;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.proyectos .galeria .proyect:hover .overlay {
+    opacity: 1;
+}
+
+.proyectos .galeria .proyect .overlay h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.proyectos .galeria .proyect .overlay p {
+    font-size: 16px;
+    font-weight: 300;
+}
+/*Seccion Contacto*/
+.contacto{
+    background: linear-gradient(to top, rgba(151, 158, 153, 0.8), rgb(151, 158, 153, .1)), url(gatito.png);
+    background-size: cover;
+    min-height: 100vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+.contacto .contenedor-seccion{
+    background-color: rgb(204, 243, 218);
+    border-radius: 30px;
+    padding: 50px;
+    max-width: 900px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 35px;
+    font-family: 'Clicker Script';
+    text-align: center;
+    padding: 5px 5px;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: white;
+    color: #000000;
+    font-size: 12px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+    width: fit-content;
+    display: block;
+    margin: 35px auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 16px;
+    color: #000000;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:rgb(64, 150, 87);
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .mapa-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #444444;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+.contacto .col .info{
+    position: relative;
+    background-color: pink;
+    padding: 20px;
+    font-size: 12px;
+    border-radius: 10px;  
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    display: flex;  
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contacto .col .info ul li i{
+    color: rgb(55, 55, 55);
+    display: inline-block;
+    margin-right: 20px;
+
+}
+/*Footerrr*/
+footer{
+    background: rgb(64, 150, 87);
+    color: rgb(160, 214, 172);
+    padding: 30px 0 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+footer .redes a{
+    color: rgb(35, 131, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid rgb(64, 150, 87); /* corregí las comas */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    font-size: 60px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    color:  rgb(64, 150, 87);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
